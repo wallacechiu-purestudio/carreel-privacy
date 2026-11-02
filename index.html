@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarReel 智影 隱私權政策</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #111;
+            font-size: 24px;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: #222;
+            font-size: 18px;
+            margin-top: 24px;
+        }
+        p, li {
+            font-size: 15px;
+            white-space: pre-line;
+        }
+        .date {
+            color: #666;
+            font-size: 14px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CarReel 智影 隱私權政策</h1>
+        <p class="date">最後更新日期：2026 年 11 月 2 日</p>
+        
+        <p>發布前請核對實際營運方式、第三方服務設定與保存期間。這份文件依 CarReel 目前測試版的功能撰寫；當功能、供應商或資料處理方式改變時，應同步更新。</p>
+        <p><strong>服務提供者：</strong>CHIU KUEI YANG（以下稱「我們」）<br>
+        <strong>隱私權聯絡信箱：</strong>wallacememe@gmail.com</p>
+        <p>本政策說明我們如何透過 CarReel 智影 iOS 應用程式（以下稱「本 App」）處理資料。請在使用前閱讀；如不同意特定處理方式，可停止使用該功能，並依本政策所列方式聯絡我們。</p>
+
+        <h2>一、服務內容與適用範圍</h2>
+        <p>本 App 協助使用者拍攝或選取車輛照片、編輯車況與廣告文稿、選擇合成語音或自行錄音、配置字幕與配樂，並製作及儲存車輛行銷影片。部分功能會使用雲端服務；剪接、字幕疊加及影片輸出由裝置執行。
+
+本政策適用於本 App 及我們提供的相關測試後端。Apple、fal.ai、Microsoft Azure、Cloudflare 等第三方服務亦各有其適用條款與隱私權資訊；本政策不取代其內容。</p>
+
+        <h2>二、處理的資料及目的</h2>
+        <p><strong>1. 登入與帳號資料</strong>
+當您使用「透過 Apple 登入」時，我們使用 Apple 提供給本 App 的使用者識別碼驗證身分並建立帳號。如果 Apple 依您的選擇提供電子郵件地址（包含隱藏電子郵件轉寄地址），我們也可能接收並保存該地址。Apple 登入介面也可能要求您選擇是否提供姓名；目前後端登入請求不保存該姓名。我們不會取得您的 Apple ID 密碼。測試後端可能保存帳號識別碼、電子郵件地址（若有）、帳號建立和最後登入時間及帳號狀態；裝置會保存登入工作階段所需資料。
+
+上述資料用於登入驗證、提供服務、關聯影片生成任務、維護帳號及處理安全問題。測試版的試用點數與部分使用紀錄保存在裝置端；更換裝置或移除資料後，這些本機紀錄不一定會同步或恢復。
+
+<strong>2. 您提供的內容</strong>
+您可使用相機拍攝，或從相簿選擇車輛照片；也可輸入車名、年份、里程、售價、配備、店家資訊、聯絡文字、廣告文稿及字幕。照片中可能包含車牌、人物、地點或其他可識別資訊；文字亦可能包含個人資料。請確認您有權處理並提供這些內容，且已取得相關人員必要的同意。
+
+您可選擇以裝置麥克風、有線麥克風或藍牙裝置自行錄音。錄音、您選用的配樂、影片片段、輸出成品、字幕與專案設定會用於提供所選功能，並可能保存在您的裝置及其備份中。您可選擇將成品另存至系統相簿或自行分享；分享至其他服務後，該服務的處理方式由其政策及您的分享對象決定。
+
+<strong>3. 影片生成所需資料</strong>
+當您選擇生成或重新生成影片片段時，本 App 會將所需照片、與車輛有關的生成提示詞及生成參數，透過我們的 Cloudflare 後端傳送至 fal.ai（Features & Labels Inc.），以使用其託管的 MiniMax 影片生成模型。照片及提示詞可能包含個人資料，例如車牌、地點、店名或您自行輸入的內容。fal.ai 處理請求並提供生成影片；本 App 下載生成結果供後續合成。
+
+為辨識及恢復非同步任務，測試後端會保存帳號關聯的任務識別碼、供應商任務編號、狀態及時間等資料。CarReel 目前未在 fal 請求中指定額外的歷史紀錄或 CDN 到期參數；相關保存方式依 fal.ai 服務規則與帳戶設定，實際 ACL／ZDR 狀態尚未核對。請勿假設刪除本機專案會自動刪除 fal 已處理的資料。
+
+<strong>4. 雲端語音合成所需資料</strong>
+若您選擇「數位主播」，本 App 會將您確認的文稿、選擇的語音及必要合成參數，透過我們的 Cloudflare 後端傳送至 Microsoft Azure AI Speech，以產生合成語音。合成結果會傳回本 App 供播放及影片製作。使用雲端合成前，請避免在文稿中輸入無須處理的敏感資訊。
+
+本版本使用供應商既有聲線；自行錄音功能供使用者錄製旁白，本 App 不會因此建立或訓練使用者個人聲音模型。依目前功能設計，自行錄製的音檔用於裝置端播放與影片合成，不會因選用 Azure 文字轉語音而上傳至 Azure；但您之後自行分享或匯出的內容可能包含該錄音。
+
+<strong>5. 連線及維運資料</strong>
+為提供登入、轉送雲端請求、防止濫用、排除故障與維持服務安全，Cloudflare Workers 可能處理 IP 位址、請求時間、服務路徑、錯誤狀態、任務識別碼及必要的裝置或連線資訊。本測試 Worker 的設定啟用 Cloudflare Observability；Cloudflare 官方說明 Workers Logs 最長保存 7 天，Free 方案表列 3 天、Paid 方案 7 天。帳戶目前方案及儀表板內的實際日誌選項尚未核對，因此請以帳戶設定為準。App 的 Worker 程式不會主動把照片或 TTS 文稿寫進自訂 console log；Cloudflare 的 invocation／錯誤紀錄仍可能包含請求中繼資料。</p>
+
+        <h2>三、裝置權限</h2>
+        <p>- 相機：在您選擇拍照時使用，用於拍攝車輛照片。拒絕權限後，仍可使用可用的相簿選圖方式。
+- 照片圖庫：在您選取照片或儲存成品時使用，實際可存取範圍依 iOS 權限及您的選擇而定。
+- 麥克風：在您選擇自行錄音時使用，用於錄製旁白。
+- 語音辨識：目前自行錄音流程不會自動啟動語音辨識。若您在支援功能中選擇語音辨識，原生模組會優先在裝置支援時離線處理；若裝置不支援離線辨識，音訊可能傳送至 Apple 處理。使用前請檢視 iOS 權限提示；若未來啟用此功能，App 會在功能內另行說明。
+
+您可在 iPhone 的「設定」中檢視或變更權限；關閉權限可能使相關功能無法使用。未選用的功能不需要您提供相應素材。</p>
+
+        <h2>四、資料儲存、保存與刪除</h2>
+        <p>1. 裝置端：專案資料、照片、錄音、影片素材、成品、文稿、設定與測試點數等可保存在 App 的本機儲存空間。您可在 App 中刪除專案或成品版本；已另存至相簿或分享出去的副本，需在相簿或對應服務中另行刪除。移除 App 可能刪除其本機資料，但系統備份、相簿或其他服務中的副本可能仍存在。
+2. Cloudflare 帳號與任務：測試後端的 D1 保存登入識別及任務狀態；目前程式沒有設定自動清除期限。刪除帳號時會匿名化登入識別資料；任務紀錄不會因本機刪除專案而自動清除。D1 的 Time Travel 是備份／時間點還原，不是線上資料的自動清除；Cloudflare 官方列出的歷史還原範圍為 Free 7 天、Paid 30 天，實際帳戶方案尚未核對。刪除帳號不會自動清除裝置上的專案及相簿副本。
+3. fal.ai：CarReel 未在請求中指定額外的 Recent History 或 CDN 到期參數，相關保存方式依 fal.ai 服務規則與帳戶設定；帳戶 ACL 及 fal 是否為本帳戶啟用 ZDR 尚未確認。
+4. Microsoft Azure AI Speech：本 App 呼叫即時預設聲線 TTS。Microsoft 官方說明即時 TTS 不保存輸入文字或生成音訊；這不涵蓋 CarReel、Cloudflare 或您的裝置端保存。
+5. 保存期間：Cloudflare Workers Logs 受帳戶方案限制，官方說明 Free 方案表列 3 天、Paid 方案 7 天，最長不超過 7 天；實際帳戶方案尚未核對。Cloudflare D1 測試帳號與任務資料目前沒有由 CarReel 設定自動清除期限。fal 的保存期間依供應商服務規則與帳戶設定；Azure 即時 TTS 不保存輸入文字與輸出音訊。以上各項屬不同保存層，不能互相替代。
+
+如果您希望撤銷「透過 Apple 登入」的授權，可在 Apple ID 的「使用 Apple 登入」相關設定中管理。您也可停用本 App 的系統權限、停止使用雲端生成功能或聯絡我們提出資料權利請求。</p>
+
+        <h2>五、與第三方分享及跨境處理</h2>
+        <p>我們為提供您要求的功能，可能將必要資料交由下列服務處理：
+
+- Cloudflare：提供後端運算、D1 資料庫、網路傳輸、安全與維運服務；可能處理帳號識別、任務狀態、IP 位址及必要連線紀錄。D1 的使用者／任務記錄目前無自動清除期限。
+- fal.ai（Features & Labels Inc.）：接收影片生成所需的首尾照片、提示詞及參數，處理非同步任務並提供生成結果。CarReel 未指定額外的 Recent History／CDN 到期參數；帳戶的檔案存取 ACL 尚未確認。
+- Microsoft Azure AI Speech：接收即時 TTS 的文字及所選聲線等合成參數。Microsoft 說明此即時功能不保存輸入文字或輸出音訊。
+- Apple：提供 Apple 登入、iOS 裝置功能及 App Store／TestFlight 等服務，並依 Apple 自身政策處理其取得的資料。
+
+第三方可能在您所在國家或地區以外處理資料。供應商及其處理地點、子處理者與資料使用方式依各自政策及契約而異。fal 是否為此帳戶／模型啟用 ZDR、檔案 ACL 與 Cloudflare 帳戶方案尚待確認；我們不宣稱本 App 已取得 fal ZDR，也不宣稱所有第三方皆採相同保存或訓練政策。
+
+目前測試版未設計以跨 App 或網站追蹤使用者來投放定向廣告，也未設計販售使用者個人資料的功能。如將來用途或合作對象改變，我們會依法更新政策，並在需要時取得您的同意。
+
+<strong>第三方資訊：</strong>
+- <a href="https://www.apple.com/legal/privacy/tw/" target="_blank">Apple 隱私權政策</a>
+- <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare 隱私權政策</a>
+- <a href="https://fal.ai/legal/privacy-policy" target="_blank">fal.ai 隱私權政策</a>
+- <a href="https://fal.ai/learn/serverless/ai-inference-provider-for-generative-media" target="_blank">fal.ai 模型 API 與資料保存說明</a>
+- <a href="https://privacy.microsoft.com/zh-tw/privacystatement" target="_blank">Microsoft 隱私權聲明</a>
+- <a href="https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/speech-service/text-to-speech/data-privacy-security" target="_blank">Azure 文字轉語音資料、隱私與安全說明</a></p>
+
+        <h2>六、資料安全</h2>
+        <p>我們使用合理的技術與管理措施保護資料，例如透過加密連線傳輸雲端請求，並將雲端服務金鑰保存在後端秘密設定，而非 App 原始碼或使用者介面。任何傳輸與儲存方式均無法保證絕對安全；請妥善保管裝置、Apple 帳號及您自行分享的影片。</p>
+
+        <h2>七、您的權利與選擇</h2>
+        <p>依適用法令，您可就自己的個人資料提出查詢、閱覽、取得副本、更正、補充、停止蒐集或使用、刪除等請求；實際權利及例外依適用法令而定。您也可透過 App 操作刪除帳號，並透過 iOS 設定管理授權。為保障資料安全，我們可能需要以合理方式核實請求者身分，並在適用法令允許的範圍內處理。
+
+請寄信至本文開頭的隱私權聯絡信箱，說明您的需求及可供聯繫的方式；請勿提供 Apple ID 密碼、驗證碼、信用卡完整資料或 API 金鑰。</p>
+
+        <h2>八、兒少資料</h2>
+        <p>本 App 並非專為兒童設計。若您未達所在地法律規定可自行同意資料處理的年齡，使用前請由法定代理人或監護人了解本政策並依適用法律提供必要同意。若您認為我們不當處理了兒少資料，請聯絡我們查核與處理。</p>
+
+        <h2>九、政策更新與聯絡方式</h2>
+        <p>我們可能因功能、供應商、法令或資料處理方式改變而更新本政策，並在本頁標示更新日期；重大變更時，會依適用法令採取適當方式通知或取得同意。
+
+如對本政策或您的資料有疑問，請聯絡：
+
+<strong>CHIU KUEI YANG</strong><br>
+電子郵件：<a href="mailto:wallacememe@gmail.com">wallacememe@gmail.com</a></p>
+    </div>
+</body>
+</html>
